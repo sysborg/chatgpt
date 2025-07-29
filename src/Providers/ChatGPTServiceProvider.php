@@ -31,7 +31,7 @@ class ChatGPTServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__ . '/../../config/chatgpt.php' => config_path('chatgpt.php'),
+                __DIR__ . '/../config/chatgpt.php' => config_path('chatgpt.php'),
             ], 'chatgpt-config');
         }
     }
